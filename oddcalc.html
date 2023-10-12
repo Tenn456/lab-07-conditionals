@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Odd Calculator</title>
+</head>
+<body>
+	<script>
+		var firstnum = prompt("Give me a number.");
+		var secondnum = prompt("Okay, give me another number.");
+		var operation = prompt("And what operation do you want? (mul/dive/mod)");
+		var answer;
+
+		if (operation === "mul")
+		{
+			answer = firstnum * secondnum;
+		}
+
+		else if (operation === "div")
+		{
+			answer = firstnum / secondnum;
+		}
+		else if (operation === "mod")
+		{
+			answer = firstnum % secondnum;
+		}
+		else
+		{
+			answer = "INVALID OPERATION";
+		}
+
+		console.log(answer);
+	</script>
+</body>
+</html>
